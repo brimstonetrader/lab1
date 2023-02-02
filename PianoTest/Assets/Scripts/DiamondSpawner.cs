@@ -20,7 +20,7 @@ public class DiamondSpawner : MonoBehaviour
     IEnumerator DropDiamond() {
         for (;;) {
             Instantiate(Diamond);
-            yield return new WaitForSeconds(Random.Range(1.5f, 3f));
+            yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
         }
     }
 }
