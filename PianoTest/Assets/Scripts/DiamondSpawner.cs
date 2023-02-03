@@ -11,6 +11,11 @@ public class DiamondSpawner : MonoBehaviour
     {
         StartCoroutine("DropDiamond");
     }
+
+    public void StopDropping() {
+        StopCoroutine("DropDiamond");
+    }
+
     // Update is called once per frame
     void Update()
     {

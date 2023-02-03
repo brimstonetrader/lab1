@@ -15,4 +15,12 @@ public class Diamond : MonoBehaviour
     {
         
     }
+
+    void OnTriggerEnter2D(Collider2D col) {
+        print("oh no they hit us");
+        if (col.gameObject.tag == "Cat"){
+            GameManager.Instance.StopGame();
+            Destroy(col.gameObject);
+        }
+    }
 }
