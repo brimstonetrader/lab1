@@ -31,10 +31,6 @@ public class GameManager : MonoBehaviour
         DiamondSpawner3.GetComponent<DiamondSpawner>().StopDropping();
     }
 
-    public void IncScore(int ds){
-        score += ds;
-    }
-
 
     // Start is called before the first frame update
     void Start()
